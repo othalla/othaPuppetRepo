@@ -8,3 +8,5 @@ mod 'puppet-roles',
   :git => 'https://github.com/othalla/puppet-roles.git'
 mod 'puppet-sudo',
   :git => 'https://github.com/othalla/puppet-sudo.git'
+mod 'puppet-tautulli',
+  :git => 'https://github.com/othalla/puppet-tautulli.git'
