@@ -6,3 +6,5 @@ mod 'puppet-profiles',
   :git => 'https://github.com/othalla/puppet-profiles.git'
 mod 'puppet-roles',
   :git => 'https://github.com/othalla/puppet-roles.git'
+mod 'puppet-sudo',
+  :git => 'https://github.com/othalla/puppet-sudo.git'
