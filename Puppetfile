@@ -1,4 +1,5 @@
 mod 'puppetlabs-stdlib', '4.25.1'
+mod 'puppetlabs-concat', '4.2.1'
 mod 'puppetlabs-vcsrepo', '2.3.0'
 mod 'saz-ssh', '3.0.1'
 mod 'saz-locales', '2.5.0'
