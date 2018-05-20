@@ -17,3 +17,5 @@ mod 'puppet-tautulli',
   :git => 'https://github.com/othalla/puppet-tautulli.git'
 mod 'othalla-packages',
   :git => 'https://github.com/othalla/puppet-packages.git'
+mod 'puppet-nextcloud',
+  :git => 'https://github.com/othalla/puppet-nextcloud.git'
