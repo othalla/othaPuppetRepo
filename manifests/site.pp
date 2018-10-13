@@ -54,7 +54,7 @@ node 'rctn004.int.othalland.xyz' {
     ssl              => true,
     ssl_only         => true,
     server           => 'tautulli.othalland.xyz',
-    proxy            => 'http://192.168.1.120:8181',
+    proxy            => 'http://rctn004.int.othalland.xyz:8181',
     proxy_set_header => [
       'Host $host',
       'X-Real-IP $remote_addr',
