@@ -25,9 +25,11 @@ node 'rctn004.int.othalland.xyz' {
     email => 'othalla.lf@gmail.com',
   }
   letsencrypt::certonly { 'tautulli.othalland.xyz':
-    domains         => ['tautulli.othalland.xyz'],
-    plugin          => 'standalone',
-    additional_args => ['--preferred-challenges http'],
+    domains              => ['tautulli.othalland.xyz'],
+    manage_cron          => true,
+    cron_success_command => '/bin/systemctl reload nginx.service',
+    plugin               => 'standalone',
+    additional_args      => ['--preferred-challenges http'],
   }
   nginx::resource::server { 'tautulli.othalland.xyz':
     ensure               => present,
