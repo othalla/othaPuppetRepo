@@ -17,6 +17,7 @@ node 'rctn001.int.othalland.xyz' {
 }
 
 node 'rctn004.int.othalland.xyz' {
+  include cron
   class { ::nginx:
     confd_purge  => true,
     server_purge => true,
