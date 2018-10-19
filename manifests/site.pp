@@ -16,6 +16,10 @@ node 'rctn001.int.othalland.xyz' {
   include ::roles::tautulli
 }
 
+node 'rctn003.int.othalland.xyz' {
+  include profiles::prometheus_server
+}
+
 node 'rctn004.int.othalland.xyz' {
   include profiles::reverse_proxy
 }
