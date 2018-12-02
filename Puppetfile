@@ -4,7 +4,6 @@ mod 'puppetlabs/vcsrepo', '2.3.0'
 mod 'puppetlabs/apt', '4.5.1'
 mod 'puppetlabs/mysql', '5.1.0'
 mod 'puppet/archive', '3.0.0'
-mod 'puppet-grafana', '5.0.0'
 mod 'puppet-cron', '1.3.0'
 mod 'puppet/nginx', '0.12.0'
 mod 'camptocamp-systemd', '2.1.0'
@@ -31,3 +30,5 @@ mod 'othalla-packages',
   :git => 'https://github.com/othalla/puppet-packages.git'
 mod 'puppet-nextcloud',
   :git => 'https://github.com/othalla/puppet-nextcloud.git'
+mod  'puppet-grafana',
+  :git => 'https://github.com/voxpupuli/puppet-grafana.git'
