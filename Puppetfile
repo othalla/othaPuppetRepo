@@ -33,3 +33,5 @@ mod 'puppet-nextcloud',
   :git => 'https://github.com/othalla/puppet-nextcloud.git'
 mod  'puppet-grafana',
   :git => 'https://github.com/voxpupuli/puppet-grafana.git'
+mod 'puppet-network',
+  :git => 'https://github.com/othalla/puppet-network.git'
