@@ -20,10 +20,6 @@ node 'rctn003.int.othalland.xyz' {
   include profiles::prometheus_server
 }
 
-node 'rctn004.int.othalland.xyz' {
-  include profiles::reverse_proxy
-}
-
 node 'rctn005.int.othalland.xyz' {
   class { 'grafana':
     install_method => 'package',
