@@ -27,6 +27,6 @@ node 'rctn004.int.othalland.xyz' {
 node 'rctn005.int.othalland.xyz' {
   class { 'grafana':
     install_method => 'package',
-    package_source => 'https://dl.grafana.com/oss/release/grafana_5.4.2_armhf.deb',
+    package_source => 'https://dl.grafana.com/oss/release/grafana_6.1.4_armhf.deb',
   }
 }
