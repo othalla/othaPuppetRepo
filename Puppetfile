@@ -18,6 +18,7 @@ mod 'aboe/chrony', '0.2.0'
 mod 'camptocamp-openssl', '1.10.0'
 mod 'herculesteam-augeasproviders_sysctl', '2.2.1'
 mod 'herculesteam-augeasproviders_core', '2.2.0'
+mod 'theforeman-dhcp', '5.0.0'
 mod 'puppet-henrylf',
   :git => 'https://github.com/othalla/puppet-henrylf.git'
 mod 'puppet-profiles',
