@@ -38,3 +38,5 @@ mod  'puppet-grafana',
   :git => 'https://github.com/voxpupuli/puppet-grafana.git'
 mod 'puppet-network',
   :git => 'https://github.com/othalla/puppet-network.git'
+mod 'othala-dns_zones',
+  :git => 'https://github.com/othalla/puppet-dns_zones.git'
