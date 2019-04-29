@@ -26,3 +26,7 @@ node 'rctn005.int.othalland.xyz' {
     package_source => 'https://dl.grafana.com/oss/release/grafana_6.1.4_armhf.deb',
   }
 }
+
+node 'rctn011.int.othalland.xyz' {
+  include ::profiles::dns
+}
