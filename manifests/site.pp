@@ -30,3 +30,7 @@ node 'rctn005.int.othalland.xyz' {
 node 'rctn011.int.othalland.xyz' {
   include ::profiles::dns
 }
+
+node 'rctn012.int.othalland.xyz' {
+  include ::profiles::dhcp
+}
