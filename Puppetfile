@@ -20,6 +20,7 @@ mod 'herculesteam-augeasproviders_sysctl', '2.2.1'
 mod 'herculesteam-augeasproviders_core', '2.2.0'
 mod 'theforeman-dhcp', '5.0.0'
 mod 'othalla-coredns', '0.1.1'
+mod 'ghoneycutt-dnsclient', '3.6.0'
 mod 'puppet-henrylf',
   :git => 'https://github.com/othalla/puppet-henrylf.git'
 mod 'puppet-profiles',
