@@ -41,5 +41,8 @@ node 'rctn012.int.othalland.xyz' {
 
 node 'rctn013.int.othalland.xyz' {
   include ::profiles::server
-  class { 'puppetdb': }
+  class { 'puppetdb::database::postgresql':
+    listen_addresses => 'puppetdb.int.othalland.xyz',
+    postgres_version => '11.0'
+  }
 }
