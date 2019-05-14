@@ -2,6 +2,11 @@ node default {
   include profiles::server
 }
 
+node 'n001.int.othalland.xyz' {
+  include profiles::server
+  include profiles::physical
+}
+
 node 'r001.int.othalland.xyz' {
   include profiles::server
   include profiles::physical
