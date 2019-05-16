@@ -50,4 +50,7 @@ node 'rctn014.int.othalland.xyz' {
     listen_addresses    => 'puppetdb.int.othalland.xyz',
     manage_package_repo => false,
   }
+  class { 'puppetdb::server':
+    database_host => 'puppetdb.int.othalland.xyz',
+  }
 }
