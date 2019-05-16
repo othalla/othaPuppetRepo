@@ -48,6 +48,6 @@ node 'rctn013.int.othalland.xyz' {
   include ::profiles::server
   class { 'puppetdb::database::postgresql':
     listen_addresses => 'puppetdb.int.othalland.xyz',
-    postgres_version => '11.0'
+    postgres_version => '11'
   }
 }
