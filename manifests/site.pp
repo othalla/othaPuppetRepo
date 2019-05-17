@@ -49,7 +49,6 @@ node 'rctn013.int.othalland.xyz' {
   class { 'puppetdb::database::postgresql':
     listen_addresses    => 'postgres.int.othalland.xyz',
     manage_package_repo => false,
-    postgres_version    => '11',
   }
 }
 
