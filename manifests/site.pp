@@ -44,13 +44,18 @@ node 'rctn012.int.othalland.xyz' {
   include ::profiles::dhcp
 }
 
-node 'rctn014.int.othalland.xyz' {
+node 'rctn013.int.othalland.xyz' {
   include ::profiles::server
   class { 'puppetdb::database::postgresql':
-    listen_addresses    => 'puppetdb.int.othalland.xyz',
+    listen_addresses    => 'postgres.int.othalland.xyz',
     manage_package_repo => false,
+    postgres_version    => '11',
   }
+}
+
+node 'rctn014.int.othalland.xyz' {
+  include ::profiles::server
   class { 'puppetdb::server':
-    database_host => 'puppetdb.int.othalland.xyz',
+    database_host => 'postgres.int.othalland.xyz',
   }
 }
