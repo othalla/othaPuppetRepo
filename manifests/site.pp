@@ -17,10 +17,6 @@ node 'r002.int.othalland.xyz' {
   include profiles::physical
 }
 
-node 'rctn001.int.othalland.xyz' {
-  include ::roles::tautulli
-}
-
 node 'rctn003.int.othalland.xyz' {
   include ::profiles::server
   include ::profiles::prometheus_server
@@ -57,4 +53,8 @@ node 'rctn014.int.othalland.xyz' {
   class { 'puppetdb::server':
     database_host => 'postgres.int.othalland.xyz',
   }
+}
+
+node 'rctn015.int.othalland.xyz' {
+  include ::roles::tautulli
 }
