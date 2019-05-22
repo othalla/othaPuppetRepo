@@ -17,6 +17,11 @@ node 'r002.int.othalland.xyz' {
   include profiles::physical
 }
 
+node 'rctn001.int.othalland.xyz' {
+  include ::profiles::server
+  include ::profiles::dns
+}
+
 node 'rctn003.int.othalland.xyz' {
   include ::profiles::server
   include ::profiles::prometheus_server
