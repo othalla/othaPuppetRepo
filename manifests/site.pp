@@ -57,6 +57,7 @@ node 'rctn014.int.othalland.xyz' {
   include ::profiles::server
   class { 'puppetdb::server':
     database_host => 'postgres.int.othalland.xyz',
+    confdir       => '/etc/puppetdb/conf.d/',
   }
 }
 
