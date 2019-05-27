@@ -1,4 +1,5 @@
 mod 'puppetlabs/stdlib', '4.25.1'
+mod 'puppet-python', '2.2.2'
 mod 'puppet-puppetboard', '5.0.0'
 mod 'puppetlabs-firewall', '1.15.3'
 mod 'puppetlabs-postgresql', '5.12.1'
