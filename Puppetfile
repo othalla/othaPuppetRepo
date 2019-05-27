@@ -26,6 +26,7 @@ mod 'theforeman-dhcp', '5.0.0'
 mod 'othalla-coredns', '0.1.1'
 mod 'ghoneycutt-dnsclient', '3.6.0'
 mod 'puppetlabs-puppetdb', '7.1.0'
+mod 'puppetlabs-apache', '5.0.0'
 mod 'puppet-henrylf',
   :git => 'https://github.com/othalla/puppet-henrylf.git'
 mod 'puppet-profiles',
