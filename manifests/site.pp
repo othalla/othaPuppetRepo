@@ -27,6 +27,29 @@ node 'rctn003.int.othalland.xyz' {
   include ::profiles::prometheus_server
 }
 
+node 'rctn004.int.othalland.xyz' {
+  include ::profiles::server
+  class { 'apache': }
+  class { 'apache::mod::wsgi': }
+
+  $ssl_dir = '/etc/puppet/ssl'
+  $puppetboard_certname = 'rctn004.int.othalland.xyz'
+  class { 'puppetboard':
+    groups              => 'puppet',
+    manage_virtualenv   => true,
+    puppetdb_host       => 'rctn014.int.othalland.xyz',
+    revision            => 'v1.0.0',
+    puppetdb_port       => 8081,
+    puppetdb_key        => "${ssl_dir}/private_keys/${puppetboard_certname}.pem",
+    puppetdb_ssl_verify => "${ssl_dir}/certs/ca.pem",
+    puppetdb_cert       => "${ssl_dir}/certs/${puppetboard_certname}.pem",
+  }
+  class { 'puppetboard::apache::vhost':
+    vhost_name => 'puppetboard.int.othalland.xyz',
+    port       => 80,
+  }
+}
+
 node 'rctn005.int.othalland.xyz' {
   include ::profiles::server
   class { 'grafana':
